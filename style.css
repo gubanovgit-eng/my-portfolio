@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0b0d14;
+    color: #f5f5f7;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    border-bottom: 1px solid #252837;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #c6c7d2;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 110px 24px;
+    text-align: center;
+}
+
+.greeting {
+    color: #a78bfa;
+}
+
+h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero-description,
+.section > p {
+    max-width: 650px;
+    margin: 24px auto;
+    color: #a6a8b8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #8b5cf6;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 55px 24px;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    font-size: 32px;
+}
+
+.project-card {
+    padding: 28px;
+    border: 1px solid #292c3c;
+    border-radius: 16px;
+    background: #121520;
+    text-align: left;
+}
+
+.project-label {
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.project-card > p:not(.project-label) {
+    color: #a6a8b8;
+}
+
+.tag {
+    display: inline-block;
+    margin: 8px 5px 0 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: #25203a;
+    color: #c4b5fd;
+    font-size: 13px;
+}
+
+#message {
+    color: #c4b5fd;
+}
+
+footer {
+    padding: 28px;
+    border-top: 1px solid #252837;
+    color: #85889a;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+}
