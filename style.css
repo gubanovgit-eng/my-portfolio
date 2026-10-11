@@ -73,7 +73,7 @@ h1 {
     padding: 13px 22px;
     border: none;
     border-radius: 10px;
-    background: #8b5cf6;
+    background: #666eff;
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .button:hover {
-    background: #7c3aed;
+    background: #666effef;
     transform: translateY(-2px);
 }
 
